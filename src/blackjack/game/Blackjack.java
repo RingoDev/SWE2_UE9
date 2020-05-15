@@ -137,8 +137,8 @@ public class Blackjack {
         }
         else if(evaluateCards() == GameResult.DealerWins) {
             winnings = 0;
-        } else winnings = human.getWager();//Draw
-        if (evaluateCards() == GameResult.Draw) winnings = human.getWager();
+        }
+        else winnings = human.getWager();
         human.setChips(human.getChips() + winnings);
     }
 

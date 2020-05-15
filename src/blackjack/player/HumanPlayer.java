@@ -9,7 +9,6 @@ public class HumanPlayer extends Player {
 
     public HumanPlayer() {
         super();
-        this.chips = 10;
     }
 
     public int getChips() {
