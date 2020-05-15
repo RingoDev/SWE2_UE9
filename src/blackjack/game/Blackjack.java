@@ -61,7 +61,7 @@ public class Blackjack {
      * @throws OutOfCardsException when no more cards are available
      */
     public Card drawCard() throws OutOfCardsException {
-        if (deck.size() == 0) throw new OutOfCardsException();
+        if (deck.size() == 0) throw new OutOfCardsException();//would be nicer to just shuffle the cards but the Error is a requirement
         Random r = new Random();
         int drawIndex = r.nextInt(deck.size());
         deck.remove(drawIndex);
