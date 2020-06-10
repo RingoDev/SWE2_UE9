@@ -30,7 +30,6 @@ public class PlayerTest {
         human.addCard(new Card(10));
         assertTrue(human.hasBlackJack());
         assertFalse(dealer.hasBlackJack());
-
     }
 
     @Test
